@@ -29,7 +29,7 @@
     <main class="main">
       <!-- Önizleme bölümü -->
       <section class="main__home home" id="home">
-        <h1 class="home__title">NAME SURNAME</h1>
+        <h1 class="home__title">MUSTAFA KUZEY</h1>
         <p class="home__subtitle">WEB-DEVELOPER, PYTHON PROGRAMMER</p>
       </section>
       <!-- Hakkımda bölümü -->
@@ -107,13 +107,31 @@
               <a class="project__link" href="https://github.com/mustafakuzey1/password_maker.git">GitHub'da aç</a>
           </div>
         {% endif %}
+        {% if button_discord%}
+          <div class="skills__project project" id="project">
+              <img class="project__img" src="https://miro.medium.com/v2/resize:fit:1358/1*FvnpdnrTSQZc_uAGP0GMWg.png" alt="project" width="500">
+              <a class="project__link" href="https://github.com/mustafakuzey1/discord_bot-main.git">GitHub'da aç</a>
+          </div>
+        {% endif %}
+        {% if button_html%}
+          <div class="skills__project project" id="project">
+              <img class="project__img" src="https://blog-media.byjusfutureschool.com/bfs-blog/2021/11/12170200/HTML-for-Kids-Article-Page.png" alt="project" width="500">
+              <a class="project__link" href="https://github.com/mustafakuzey1/web3.git">GitHub'da aç</a>
+          </div>
+        {% endif %}
+        {% if button_db%}
+          <div class="skills__project project" id="project">
+              <img class="project__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZGBMaKLpiftVAc0ZXVelbODnvUNFob0IOuA&usqp=CAU" alt="project" width="500">
+              <a class="project__link" href="https://github.com/mustafakuzey1/diary-tur-main.git">GitHub'da aç</a>
+          </div>
+        {% endif %}
       </section>
       <!-- Geri bildirim formu -->
       <section class="main__feedback feedback" id="feedback">
         <h2 class="feedback__title">FEEDBACK</h2>
         <form action="/submit" method="POST" class="feedback__form form">
           <label for="email">
-            <input type="email" class="form__input" name="email" id="email" placeholder="Введите E-mail" required>
+            <input type="email" class="form__input" name="email" id="email" placeholder="E-mail" required>
           </label>
           <label for="text">
             <textarea name="text" class="form__input" id="text" cols="70" rows="10" required placeholder="Comment"></textarea>
